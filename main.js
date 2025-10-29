@@ -41,6 +41,7 @@ function setstatus(message) {
 async function tinkerbell() {
 
   const iterations = document.getElementById('iterations').value;
+  const delay = document.getElementById('delay').value;
 
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
@@ -82,9 +83,9 @@ async function tinkerbell() {
               
           drawPoint(ctx, x_draw+500, y_draw+500);
           if( i % 10 == 0 ) {
-              setstatus(i + " Points")
+              setstatus(i + " Dots")
           }
-          await sleepNow(2);
+          await sleepNow(delay);
           if( !running) {
               return;
           }

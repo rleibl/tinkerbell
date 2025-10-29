@@ -11,7 +11,15 @@
   <body>
     <h1>Tinkerbell Map</h1>
     <div style="margin-bottom: 10px">
-      <input id="iterations" type="text" value=10000></input>
+        <table style="border: 0">
+            <tr>
+                <td>Number of dots </td>
+                <td><input id="iterations" type="text" value=10000></input></td>
+            </tr><tr>
+                <td>Delay between dots in ms 
+                <td><input id="delay" type="text" value=10></input></td>
+            </tr>
+        </table>
       <button id="btnstart" onclick="startstop()">Start</button>
       <button id="btnreset" onclick="reset()">Reset</button>
     </div>
