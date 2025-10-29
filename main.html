@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="main.js" defer></script>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Tinkerbell Map</h1>
+    <div style="margin-bottom: 10px">
+      <input id="iterations" type="text" value=10000></input>
+      <button id="btnstart" onclick="startstop()">Start</button>
+      <button id="btnreset" onclick="reset()">Reset</button>
+    </div>
+    <canvas id="canvas" width="1000" height="1000">
+    </canvas>
+    <div id="status"></div>
+    <div id="log"></div>
+  </body>
+</html>
